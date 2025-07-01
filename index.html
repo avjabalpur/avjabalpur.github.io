@@ -1,62 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Amit Vishwakarma | Software Engineer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f5f7fa;
-      color: #333;
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
-
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+    }
     header {
-      background-color: #2c3e50;
+      background: linear-gradient(to right, #2c3e50, #3498db);
       color: white;
-      padding: 40px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
-
     header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
     }
-
     header p {
       font-size: 1.2rem;
       margin-top: 10px;
     }
-
-    section {
-      max-width: 800px;
-      margin: 30px auto;
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
       padding: 0 20px;
     }
-
+    section {
+      margin-bottom: 50px;
+    }
     h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
       color: #2c3e50;
-      border-bottom: 2px solid #ecf0f1;
+      border-bottom: 2px solid #e0e0e0;
       padding-bottom: 5px;
     }
-
     ul {
+      list-style-type: disc;
       padding-left: 20px;
     }
-
+    .tech-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+    }
+    .tech-item {
+      background: #fff;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    }
     footer {
       background-color: #2c3e50;
       color: white;
       text-align: center;
-      padding: 15px;
-      margin-top: 40px;
+      padding: 20px;
+      font-size: 0.9rem;
     }
-
-    .contact a {
-      color: #2980b9;
+    a {
+      color: #3498db;
       text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -64,58 +82,66 @@
 
 <header>
   <h1>Amit Vishwakarma</h1>
-  <p>Software Engineer | ASP.NET | Reactjs | AngularJS | NodeJS | SQL Server</p>
+  <p>Senior Software Engineer with 10+ Years of Experience</p>
 </header>
 
-<section>
-  <h2>About Me</h2>
-  <p>
-    I am a passionate software engineer with 3+ years of experience in developing web and service-based applications using ASP.NET, AngularJS, and NodeJS. I’m driven by a strong desire to create efficient, scalable systems and constantly sharpen my technical and analytical skills.
-  </p>
-</section>
+<div class="container">
 
-<section>
-  <h2>Experience</h2>
-  <ul>
-    <li><strong>Emids Technologies Pvt. Ltd.</strong> – Bangalore (Jun 2012 – Present)</li>
-    <li><strong>Avin Software Technologies</strong> – Bangalore (Sep 2011 – Jun 2012)</li>
-  </ul>
-</section>
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I am a results-driven software engineer with over a decade of experience in building web and enterprise applications using modern Microsoft and JavaScript tech stacks. I specialize in ASP.NET, Angular, Node.js, and SQL Server. I love designing scalable systems and mentoring teams to deliver clean, maintainable code.
+    </p>
+  </section>
 
-<section>
-  <h2>Technical Skills</h2>
-  <ul>
-    <li><strong>Languages:</strong> C#, C, C++ (Basic)</li>
-    <li><strong>Web:</strong> ASP.NET, WCF, Web API, HTML, CSS, JavaScript</li>
-    <li><strong>Frameworks:</strong> .NET 3.5/4.0, AngularJS, NodeJS</li>
-    <li><strong>Databases:</strong> SQL Server 2005/2008, Oracle</li>
-    <li><strong>Version Control:</strong> Git, SVN</li>
-  </ul>
-</section>
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="tech-grid">
+      <div class="tech-item">ASP.NET / Web API</div>
+      <div class="tech-item">C# / .NET 6+</div>
+      <div class="tech-item">AngularJS / Angular</div>
+      <div class="tech-item">Node.js</div>
+      <div class="tech-item">SQL Server / Oracle</div>
+      <div class="tech-item">HTML / CSS / JS</div>
+      <div class="tech-item">Git / GitHub</div>
+      <div class="tech-item">WCF / REST APIs</div>
+    </div>
+  </section>
 
-<section>
-  <h2>Projects</h2>
-  <ul>
-    <li><strong>Empower 6.0</strong> – Healthcare portal with admin/staff/user modules</li>
-    <li><strong>Communicate 5.0</strong> – WCF-based service suite for internal APIs</li>
-    <li><strong>DnivraIndia.com</strong> – E-commerce furniture platform</li>
-  </ul>
-</section>
+  <section>
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>Emids Technologies Pvt. Ltd., Bangalore</strong> (Jun 2012 – Present)</li>
+      <li><strong>Avin Software Technologies, Bangalore</strong> (Sep 2011 – Jun 2012)</li>
+    </ul>
+  </section>
 
-<section>
-  <h2>Education</h2>
-  <ul>
-    <li>MCA – RGPV Bhopal (72%)</li>
-    <li>B.Sc. – Rani Durgavati Vishwavidyalaya, Jabalpur (62%)</li>
-  </ul>
-</section>
+  <section>
+    <h2>Key Projects</h2>
+    <ul>
+      <li><strong>Empower 6.0:</strong> Healthcare platform to manage doctors and patient health records.</li>
+      <li><strong>Communicate 5.0:</strong> Large-scale WCF API suite integrated with multiple systems.</li>
+      <li><strong>DnivraIndia:</strong> E-commerce furniture website with fully dynamic admin and shipping modules.</li>
+    </ul>
+  </section>
 
-<section class="contact">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:mail.amitvishwakarma@gmail.com">mail.amitvishwakarma@gmail.com</a></p>
-  <p>Phone: +91 78298 52233</p>
-  <p>Location: Bangalore, India</p>
-</section>
+  <section>
+    <h2>Education</h2>
+    <ul>
+      <li>MCA – Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal (2011)</li>
+      <li>B.Sc – Rani Durgavati Vishwavidyalaya, Jabalpur (2007)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:mail.amitvishwakarma@gmail.com">mail.amitvishwakarma@gmail.com</a></p>
+    <p>Phone: +91 78298 52233</p>
+    <p>Location: Bangalore, India</p>
+    <p>GitHub: <a href="https://github.com/avjabalpur" target="_blank">avjabalpur</a></p>
+  </section>
+
+</div>
 
 <footer>
   © 2025 Amit Vishwakarma. All rights reserved.
